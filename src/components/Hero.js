@@ -15,7 +15,7 @@ export default function Hero() {
         PhD Researcher · Nanophotonics · Metalenses · Metasurfaces
       </p>
 
-      
+      <a className="button" href="/cv.pdf">Download CV</a>
     </section>
   );
 }
