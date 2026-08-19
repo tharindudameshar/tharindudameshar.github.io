@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self'; script-src 'self'"
+    />
+    <title>Lifeboat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="mark">
+          <span class="pulse"></span>
+          LIFEBOAT
+        </div>
+        <div id="top-status" class="status">PROTOCOL STANDBY</div>
+        <div id="top-meta" class="meta">PRESENT 2026 · PARADOX 0%</div>
+      </header>
+
+      <section class="layout">
+        <aside class="rail">
+          <h2>Team</h2>
+          <div id="team"></div>
+          <h2>Helix</h2>
+          <div class="crowe-card">
+            <img src="portraits/crowe.png" alt="Silas Crowe" />
+            <p id="helix-note" class="helix"></p>
+          </div>
+          <button type="button" id="btn-reset" class="ghost">Reset prime timeline</button>
+          <p class="shortcuts">⌘1 briefing<br />⌘2 hours<br />⌘3 log<br />esc back</p>
+        </aside>
+        <main id="view" class="view"></main>
+      </section>
+    </div>
+
+    <script src="engine.js"></script>
+    <script src="events.js"></script>
+    <script src="present.js"></script>
+    <script src="audio.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
